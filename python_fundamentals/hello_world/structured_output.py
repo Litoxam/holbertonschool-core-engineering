@@ -1,6 +1,4 @@
 #!/usr/bin/env python3
-
-
 Language = "Python"
 output_string = f'Language: {Language}'
 Version = 3
