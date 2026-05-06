@@ -2,15 +2,11 @@
 
 def pow(a, b):
     """return the value of a raised to the power of b"""
-    power = 1
-    exponent = abs(b)
-    if b == 0:
-        return 1
+    result = 1
 
+    for i in range(abs(b)):
+        result *= a
     if b < 0:
-        a = 1 / a
+        result = 1 / result
 
-    for i in range(exponent):
-        power *= a
-
-    return power
+    return result
