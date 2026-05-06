@@ -14,6 +14,3 @@ def pow(a, b):
         power *= a
 
     return power
-
-
-print("{}".format(pow(2, -3)))
