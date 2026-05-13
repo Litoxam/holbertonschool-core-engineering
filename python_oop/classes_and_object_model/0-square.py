@@ -3,4 +3,5 @@
 
 
 class Square:
+    """First class of Square without attributes"""
     pass
