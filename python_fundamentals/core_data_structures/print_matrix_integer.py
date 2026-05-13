@@ -3,10 +3,10 @@
 
 def print_matrix_integer(matrix=[[]]):
     """prints a matrix of integers"""
-    for row in matrix:
-        for i in range(len(row)):
-            print("{:d}".format(row[i]), end="")
-            if i < len(row) - 1:
+    for line in matrix:
+        for col in range(len(line)):
+            print("{:d}".format(line[col]), end="")
+            if col < len(line) - 1:
                 print(" ", end="")
 
         print()
