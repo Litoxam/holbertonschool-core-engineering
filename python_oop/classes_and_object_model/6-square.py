@@ -13,7 +13,7 @@ class Square:
             return ""
         
         square = ""
-        square += "\n" * self.position[1]  # y
+        square += "\n" * self.__position[1]  # y
         
         for i in range(self.__size):  # x
             square += (" " * self.__position[0]) + ("#" * self.__size)
