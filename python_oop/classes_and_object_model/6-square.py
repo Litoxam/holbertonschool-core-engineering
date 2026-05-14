@@ -11,6 +11,15 @@ class Square:
     def __str__(self):
         if self.__size == 0:
             return ""
+        
+        square = ""
+        square += "\n" * self.position[1]  # y
+        
+        for i in range(self.__size):  # x
+            square += (" " * self.__position[0]) + ("#" * self.__size)
+            if i < self.__size - 1:
+                square += "\n"
+        return square
 
     def get_size(self):
         """get the value of __size"""
@@ -45,3 +54,12 @@ class Square:
 
     size = property(get_size, set_size)
     position = property(get_position, set_position)
+
+
+my_square = Square(5, (0, 0))
+print(my_square)
+
+print("--")
+
+my_square = Square(5, (4, 1))
+print(my_square)
