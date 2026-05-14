@@ -4,12 +4,13 @@
 
 class Square:
     """Add getters and setters for the size attribute."""
-    def __init__(self, size=0):
-        if not isinstance(size, int):
-            raise TypeError("size must be an integer")
-        if size < 0:
-            raise ValueError("size must be >= 0")
-        self.__size = size
+    def __init__(self, size=0, position=(0, 0)):
+        self.size = size
+        self.position = position
+
+    def __str__(self):
+        if self.size == 0:
+            return ""
 
     def get_size(self):
         """get the value of __size"""
@@ -25,11 +26,19 @@ class Square:
     def my_print(self):
         if self.size == 0:  # size -> property -> get_size -> value
             print()
-            return
-        for i in range(self.size):
-            print("#" * self.size)
+        else:
+            print(self)
 
     def area(self):
         return self.__size * self.__size
 
+    def get_position(self):
+        return self.__position
+
+    def set_position(self, value):
+        if not instance(value, tupple):
+            raise TypeError("position must be a tuple of 2 positive integers")
+        self.__position = value
+
     size = property(get_size, set_size, my_print)
+    position = property(get_position, set_position)
