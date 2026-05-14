@@ -53,12 +53,3 @@ class Square:
 
     size = property(get_size, set_size)
     position = property(get_position, set_position)
-
-
-my_square = Square(5, (0, 0))
-print(my_square)
-
-print("--")
-
-my_square = Square(5, (4, 1))
-print(my_square)
