@@ -11,10 +11,10 @@ class Square:
     def __str__(self):
         if self.__size == 0:
             return ""
-        
+
         square = ""
         square += "\n" * self.__position[1]  # y
-        
+
         for i in range(self.__size):  # x
             square += (" " * self.__position[0]) + ("#" * self.__size)
             if i < self.__size - 1:
@@ -45,11 +45,10 @@ class Square:
         return self.__position
 
     def set_position(self, value):
-        if (not isinstance(value, tuple) or len(value) != 2):
+        if (not isinstance(value, tuple) or len(value) != 2 or
+                not all(isinstance(i, int) for i in value) or
+                not all(i >= 0 for i in value)):
             raise TypeError("position must be a tuple of 2 positive integers")
-        for i in value:
-            if (not isinstance(i, int) or (i < 0)):
-                raise TypeError("position must be a tuple of 2 positive integers")
         self.__position = value
 
     size = property(get_size, set_size)
