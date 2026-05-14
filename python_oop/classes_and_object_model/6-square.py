@@ -9,7 +9,7 @@ class Square:
         self.position = position
 
     def __str__(self):
-        if self.size == 0:
+        if self.__size == 0:
             return ""
 
     def get_size(self):
