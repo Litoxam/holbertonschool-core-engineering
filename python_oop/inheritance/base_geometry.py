@@ -4,10 +4,6 @@
 
 class BaseGeometry:
     """Create a class named BaseGeometry"""
-    def __init__(self, name="", value=0):
-        self.name = name
-        self.value = value
-
     def area(self):
         raise Exception("area() is not implemented")
 
@@ -17,10 +13,3 @@ class BaseGeometry:
         if value <= 0:
             raise ValueError("{} must be greater than 0".format(name))
         return value
-
-bg = BaseGeometry()
-
-try:
-    print(bg.area())
-except Exception as e:
-    print("[{}] {}".format(e.__class__.__name__, e))
