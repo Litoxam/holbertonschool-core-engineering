@@ -58,12 +58,8 @@ def shape_info(shape):
 
 
 if __name__ == "__main__":
-    my_circle = Circle(5)
-    my_rectangle = Rectangle(4, 6)
-
-    print("Circle Info:")
-    shape_info(my_circle)
-    print()
-    print("Rectangle Info:")
-    shape_info(my_rectangle)
+    circle = Circle(radius=5)
+    rectangle = Rectangle(width=4, height=7)
     
+    shape_info(circle)
+    shape_info(rectangle)
