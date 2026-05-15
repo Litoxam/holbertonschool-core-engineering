@@ -66,3 +66,4 @@ if __name__ == "__main__":
     print()
     print("Rectangle Info:")
     shape_info(my_rectangle)
+    
