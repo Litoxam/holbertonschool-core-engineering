@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-""""""
+"""The Enigmatic FlyingFish - Exploring Multiple Inheritance"""
 
 from abc import ABC, abstractmethod
 import math
@@ -28,7 +28,7 @@ class Bird():
 
 
 class FlyingFish(Fish, Bird):
-    """class named FlyingFishBird that inherits from FlyingFish and Bird"""
+    """class named FlyingFish that inherits from Fish and Bird"""
 
     def fly(self):
         """Method fly that prints The flying fish is soaring"""
@@ -40,7 +40,7 @@ class FlyingFish(Fish, Bird):
 
     def habitat(self):
         """Method habitat"""
-        print("The flying fish lives both in water and the sky")
+        print("The flying fish lives both in water and the sky!")
 
 
 if __name__ == "__main__":
