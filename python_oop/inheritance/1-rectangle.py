@@ -21,7 +21,7 @@ class Rectangle(BaseGeometry):
     Both values are validated by the integer_validator
     """
     def __init__(self, width, height):
-
+        """Init Rectangle, validate width and height"""
         self.integer_validator("width", width)
         self.integer_validator("height", height)
 
