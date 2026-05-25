@@ -1,80 +1,30 @@
-# Holberton-core-engineering
+<div align="center">
 
-This repository serves as an introduction to the Python programming language and is part of the [Holberton School](https://www.linkedin.com/school/holberton-school-france/posts/?feedView=all).
+# 🚀 Holberton School - Core Engineering
 
-## General Requirements
+This repository contains my projects developed at **Holberton School** regarding the **Python** programming language. The objective is to master Python fundamentals, from scripts and control flow to object-oriented programming.
 
-* Corrections will run on **Ubuntu 20.04 LTS**
-* Python version used for correction: **Python 3.8.x**
-* Every Python file must start exactly with:
-  ```
-  #!/usr/bin/env python3
-  ```
-  * Every Python file must:
-    + Be executable
-    + End with a newline
-    + Be PEP8 compliant (pycodestyle 2.14.0)
-* No external libraries are allowed
-* No functions are allowed in this this project
-* No imports are allowed
-* Output must match expected formatting exactly
+## 📁 Projects Summary
 
-## Projects Descriptions (Learning Objectives)
+| Directory | Description |
+| :---: | :---: |
+| [**hello_world**](https://github.com/Litoxam/holbertonschool-core-engineering/tree/main/python_fundamentals/hello_world) | Expressions, statements, and environment isolation. |
+| [**control_flow**](https://github.com/Litoxam/holbertonschool-core-engineering/tree/main/python_fundamentals/control_flow) | Conditionals, loops, and iteration logic. |
+| [**functions_modules**](https://github.com/Litoxam/holbertonschool-core-engineering/tree/main/python_fundamentals/functions_modules) | Modularity, function definitions, and execution scopes. |
+| [**core_data_structures**](https://github.com/Litoxam/holbertonschool-core-engineering/tree/main/python_fundamentals/core_data_structures) | Lists, tuples, sets, dictionaries, and iteration. |
+| [**exception_handling**](https://github.com/Litoxam/holbertonschool-core-engineering/tree/main/python_fundamentals/exception_handling) | Runtime exceptions and safe error handling. |
+| [**oop**](https://github.com/Litoxam/holbertonschool-core-engineering/tree/main/python_oop) | Classes, instances, encapsulation, and special methods. |
 
-### Python Fundamentals:
+## 🛠️ General Requirements
 
-* `hello_world`:
-    + Distinguish between expressions and statements in the interpreter
-    + Predict when output will appear automatically in interactive mode
-    + Create a portable, executable Python script
-    + Install and use a development tool via `pip`
-    + Explain the difference vetween global installations and isolated environments
-    + Demonstrate dependency isolation using `venv`
-* `control_flow`:
-    + Write conditional statements using `if`, `elif`, and `else`
-    + Use comparison and logical operators correctly
-    + Control repetition using `while` and `for` loops
-    + Reason about loop boundaries and iterations ranges
-    + Generate formatted output using numeric iteration
-    + Comibne conditions and loops to produce deterministic output
-* `Functions & Modularity`:
-    + Define functions with parameters and return values
-    + Distinguish clearly between `print` and `return`
-    + Implement logic inside functions using conditionals and loops
-    + Understand how Python executes top-level code in a file
-    + Explain what `if __name__ == "__main__"` does and why it is necessary
-    + Import functions from other files
-    + Import variables from other files
-    + Write scripts that behave correctly when executed and when imported
-* `Core Data Structures`:
-    + Iterate over lists and matrices and produce exact, formatted output
-    + Access and modify list elements safely without raising unexpected errors
-    + Create new collections without mutating the original input when required
-    + Use tuples to return multiple values in a clear, consistent way
-    + Use sets to compute intersections and symmetric differences
-    + Use dictionaries to add, update, and query key-value data
-    + Reason about edge cases such as empty inputs, missing keys, and repeated values
-* `Exception Handling`
-    + Identify common runtime exceptions (TypeError, IndexError, ZeroDivisionError, KeyError)
-    + Use `try` and `except` blocks correctly
-    + Catch specific exception types rather than broad exceptions
-    + Use `else` and `finally` appropriately
-    + Raise exceptions explicitly when required
-    + Write functions that fail safely and predictably
+Environment: Ubuntu 20.04 LTS
+Python Version: 3.8.x
+File Header: Every file must start with #!/usr/bin/env python3
+Compliance: PEP8 (pycodestyle 2.14.0)
+Constraints: No external libraries, no imports allowed, executable files, and ending with a newline.
 
-### Python OOP:
+## ✒️ Author
 
-* `Classes And Object Model`:
-    + Explain the difference between a **class** and an **instance**
-    + Create classes that model simple entities
-    + Define and initialize instance attributes using `__init__`
-    + Implement instance methods that operate on object state
-    + Apply basic **encapsulation principles**
-    + Validate input when contructing objects
-    + Control access to internal attributes
-    + Implement string representations of objects using special methods
-    + Design simple classes that model real-worl concepts
+**Litoxam** - [GitHub Profile](https://github.com/Litoxam)
 
-## Authors
-
-* Maxime BERNIER [github profile](https://github.com/Litoxam)
+</div>
