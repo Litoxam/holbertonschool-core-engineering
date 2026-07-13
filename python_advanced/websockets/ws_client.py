@@ -18,7 +18,3 @@ async def main():
 
     # Print only the server response.
     print(response, end="")
-
-
-if __name__ == "__main__":
-    asyncio.run(main())
