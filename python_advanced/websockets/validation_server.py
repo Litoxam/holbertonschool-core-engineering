@@ -2,20 +2,25 @@
 
 import asyncio
 from websockets.asyncio.server import serve
+from websockets.exceptions import ConnectionClosed
 
 
 # Handle each client connection.
 async def connection_handler(websocket):
-    async for message in websocket:
-        # Message printed if not empty
-        if len(message.strip()) > 0:
-            print(f"Received: {message}")
-        else:
-            print("ERR:EMPTY")
+    try:
+        async for message in websocket:
+            if len(message.strip()) > 0:
+                print(f"Received: {message}")
+            else:
+                print("ERR:EMPTY")
 
-        await websocket.send(message)
-        # Print a message when the client is disconnected
-    print("Client disconnected")
+            await websocket.send(message)
+
+    except ConnectionClosed:
+        pass
+
+    finally:
+        print("Client disconnected")
 
 
 async def main():
