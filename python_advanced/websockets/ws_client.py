@@ -3,11 +3,12 @@
 import asyncio
 import websockets
 
+
 # Connect to the server, send one message and return the response.
 async def connect_and_send(uri: str, text: str) -> str:
-    async with websockets.connect(uri) as websocket:
-        await websocket.send(text)
-        response = await websocket.recv()
+    async with websockets.connect(uri) as ws:
+        await ws.send(text)
+        response = await ws.recv()
         return response
 
 
