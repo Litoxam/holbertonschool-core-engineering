@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 
 import asyncio
-from websockets.asyncio.client import connect
-
+import websockets
 
 # Connect to the server, send one message and return the response.
 async def connect_and_send(uri: str, text: str) -> str:
