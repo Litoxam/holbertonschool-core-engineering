@@ -2,6 +2,7 @@
 
 import asyncio
 import websockets
+import os
 
 
 # Connect to the server, send one message and return the response.
@@ -14,7 +15,8 @@ async def connect_and_send(uri: str, text: str) -> str:
 
 async def main():
     # Connect to the local WebSocket server.
-    response = await connect_and_send("ws://localhost:8765/", "demo")
+    uri = os.getenv("WS_URI", "ws://localhost:8765/")
+    response = await connect_and_send(uri, "demo")
 
     # Print only the server response.
     print(response, end="")
