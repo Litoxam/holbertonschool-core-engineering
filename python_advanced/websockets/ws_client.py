@@ -14,9 +14,7 @@ async def connect_and_send(uri: str, text: str) -> str:
 
 async def main():
     # Connect to the local WebSocket server.
-    uri = "ws://localhost:8765"
-    text = "demo"
-    response = await connect_and_send(uri, text)
+    response = await connect_and_send("ws://localhost:8765/", "demo")
 
     # Print only the server response.
     print(response, end="")
