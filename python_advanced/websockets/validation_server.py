@@ -19,9 +19,6 @@ async def connection_handler(websocket):
     except ConnectionClosed:
         pass
 
-    finally:
-        print("Client disconnected")
-
 
 async def main():
     # Start the WebSocket server on localhost:8765.
