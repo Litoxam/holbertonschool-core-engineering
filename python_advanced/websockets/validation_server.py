@@ -10,7 +10,7 @@ async def connection_handler(websocket):
     try:
         async for message in websocket:
             if len(message.strip()) > 0:
-                print(f"Received: {message}")
+                print(f"OK:{message}")
             else:
                 print("ERR:EMPTY")
 
